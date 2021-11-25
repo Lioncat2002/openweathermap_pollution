@@ -7,23 +7,10 @@
       html, body{padding: 0; margin: 0;}
       #earth_div{top: 0; right: 0; bottom: 0; left: 0; position: absolute !important;}
     </style>
-    <title>WebGL Earth API: Hello World</title>
+    <title>Weather map</title>
   </head>
   <body onload="initialize()">
     <div id="earth_div"></div>
-    <script>
-        function initialize() {
-          var earth = new WE.map('earth_div');
-          WE.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png',{
-            attribution: '© OpenStreetMap contributors'
-          }).addTo(earth);
-          function onMapClick(e) {
-  
-        console.log(e.latlng)
-        }
-        earth.on('click',onMapClick)
-        }
-
-      </script>
+    <script src="./index.js"></script>
   </body>
 </html>
