@@ -28,13 +28,5 @@ function initialize() {
     earth.on('dblclick',onMapClick)
     }
 
-if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(showPosition);
-} else {
-      alert("Geolocation is not supported by this browser.");
-}
 
-function showPosition(position){
-    
-}
 
