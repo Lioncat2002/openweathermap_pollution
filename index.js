@@ -21,9 +21,6 @@ function initialize() {
     
         })
 
-
-        
-
      }
     earth.on('dblclick',onMapClick)
     }
